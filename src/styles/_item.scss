@@ -1,0 +1,43 @@
+.item {
+  position: relative;
+}
+
+.item--big {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.item--right {
+  grid-column-end: -1;
+}
+
+.item--small {
+  grid-column: span 1;
+}
+
+.item__inner {
+  padding-bottom: 50%;
+}
+
+.item__content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .item--big {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
