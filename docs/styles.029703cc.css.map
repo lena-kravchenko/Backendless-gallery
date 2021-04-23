@@ -1,1 +1,0 @@
-{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAGA,KACE,8DAAA,CACA","file":"styles.029703cc.css","sourceRoot":"..\\src","sourcesContent":["/* TODO: Add styles */\n$base-font-size: 24px;\n\nbody {\n  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;\n  font-size: $base-font-size;\n}\n"]}

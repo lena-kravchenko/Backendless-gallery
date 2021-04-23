@@ -1,0 +1,21 @@
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding-bottom: 50px;
+
+  &__block1 {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__img {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__img--three {
+    flex-direction: column;
+  }
+}
