@@ -1,6 +1,6 @@
 .blocks {
+  width: 100vw;
   display: flex;
-  flex-direction: column;
   gap: 15px;
   align-items: center;
   padding-bottom: 50px;
@@ -8,14 +8,32 @@
   &__block1 {
     display: flex;
     gap: 15px;
+    height: 600px;
   }
 
-  &__img {
+  &__img--one {
+    width: calc(75% - 15 / 2);
+  }
+
+  &__img--three {
+    width: calc(25% - 15 / 2);
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+/*   &__block1 {
     display: flex;
     gap: 15px;
   }
 
-  &__img--three {
-    flex-direction: column;
+  &__img {
+    height: 600px;
+    gap: 15px;
   }
+
+  &__img--three {
+    height: 600px;
+    flex-direction: column;
+  } */
 }

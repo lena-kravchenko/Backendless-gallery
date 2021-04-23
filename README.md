@@ -1,6 +1,5 @@
 # Backendless Gallery
 
-About project.
 - [DEMO LINK](https://lena-kravchenko.github.io/Backendless-gallery/)
 
 ## Description
