@@ -7,11 +7,13 @@
   justify-content: space-between;
   align-items: center;
 
-  background-color: #b0bfc6;
-  border-bottom: 2px solid #939fa5;
+  background-color: var(--second-color);
+  border-bottom: 2px solid var(--third-color);
+  color: var(--font-color);
 
   &__section {
     display: flex;
+    gap: 10px;
   }
 
   @media (max-width: 1080px) {

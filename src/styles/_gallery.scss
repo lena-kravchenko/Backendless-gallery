@@ -1,9 +1,9 @@
 .gallery {
-  background-color: #e2f1f8;
+  background-color: var(--main-color);
 
   &__heading {
     font-size: 1.8rem;
     text-align: center;
-    color: black;
+    color: var(--font-color);
   }
 }

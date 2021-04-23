@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-theme">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backendless Gallery</title>
     <link rel="stylesheet" href="./styles/main.scss">
-    <script src="./main.js"></script>
+    <script defer src="./main.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   </head>
@@ -17,26 +17,36 @@
         Backendless
       </p>
       <div class="header__section">
-        <label for="theme">
-          <input
-            type="radio"
-            id="theme"
-            name="theme"
-          >
-            Light Theme
-          <input
-            type="radio"
-            id="theme"
-            name="theme"
-          >
-            Dark Theme
-          <input
-            type="radio"
-            id="theme"
-            name="theme"
-          >
-            Backendless Theme
-        </label>
+        <form action="#" method="GET" class="theme-toggler">
+          <label for="light-theme">
+            <input
+              type="radio"
+              id="light-theme"
+              name="theme"
+              value="light-theme"
+              checked
+            >
+              Light Theme
+          </label>
+          <label for="dark-theme">
+            <input
+              type="radio"
+              id="dark-theme"
+              name="theme"
+              value="dark-theme"
+            >
+              Dark Theme
+          </label>
+          <label for="backendless-theme">
+            <input
+              type="radio"
+              id="backendless-theme"
+              name="theme"
+              value="backendless-theme"
+            >
+              Backendless Theme
+          </label>
+        </form>
       </div>
     </header>
 
