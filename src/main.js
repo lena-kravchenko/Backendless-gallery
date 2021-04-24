@@ -38,3 +38,8 @@ selectElement.addEventListener('change', (event) => {
   event.preventDefault();
   initialState(event.target.value);
 });
+
+selectElement.addEventListener('click', (event) => {
+  event.preventDefault();
+  initialState(event.target.value);
+});

@@ -18,7 +18,7 @@
       </p>
       <div class="header__section">
         <form action="#" method="GET" class="theme-toggler">
-          <label for="light-theme">
+          <label for="light-theme" class="header__theme--radio">
             <input
               type="radio"
               id="light-theme"
@@ -28,7 +28,7 @@
             >
               Light Theme
           </label>
-          <label for="dark-theme">
+          <label for="dark-theme" class="header__theme--radio">
             <input
               type="radio"
               id="dark-theme"
@@ -37,7 +37,7 @@
             >
               Dark Theme
           </label>
-          <label for="backendless-theme">
+          <label for="backendless-theme" class="header__theme--radio">
             <input
               type="radio"
               id="backendless-theme"
@@ -45,6 +45,40 @@
               value="backendless-theme"
             >
               Backendless Theme
+          </label>
+
+          <label for="backendless-theme" class="header__theme--button">
+            <button
+              type="button"
+              name="theme"
+              value="light-theme"
+            >
+              Light Theme
+            </button>
+            <button
+              type="button"
+              name="theme"
+              value="dark-theme"
+            >
+              Dark Theme
+            </button>
+            <button
+              type="button"
+              name="theme"
+              value="backendless-theme"
+            >
+              Backendless Theme
+            </button>
+          </label>
+
+          <label for="light-theme" class="header__theme--select">
+            <select
+              id="light-theme"
+              name="theme"
+            >
+            <option value="light-theme">Light Theme</option>
+            <option value="dark-theme">Dark Theme</option>
+            <option value="backendless-theme">Backendless Theme</option>
           </label>
         </form>
       </div>
