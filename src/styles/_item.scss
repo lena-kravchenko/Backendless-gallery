@@ -43,18 +43,25 @@
     }
 
     &[tabindex='0']:focus {
+      width: auto;
+      height: auto;
+      min-width: 60%;
+      min-height: 60%;
+      margin: auto;
+
       position: fixed;
       z-index: 10;
       top: 0;
       left: 0;
       bottom: 0;
       right: 0;
-      width: auto;
-      height: auto;
-      min-width: 60%;
-      min-height: 60%;
-      margin: auto;
+
       box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(59, 59, 59, 0.4);
+
+      @media (max-width: 800px) {
+        max-width: 70%;
+        max-height: 70%;
+      }
     }
 
     &[tabindex='0']:focus,
