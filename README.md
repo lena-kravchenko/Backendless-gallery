@@ -6,6 +6,12 @@
 
 This is an adaptive layout of backendless gallery including three themes - light, dark and backendless ones.
 
+## Requirements
+
+Here you can see detail requirements for this layout:
+
+https://drive.google.com/file/d/18F7iARMji8I2HITEILNf9M77X6NGY2Zy/view?usp=sharing
+
 ## Local deployment
 
 ### Dependencies
