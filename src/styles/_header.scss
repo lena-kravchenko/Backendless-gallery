@@ -1,3 +1,9 @@
+@keyframes blinker {
+  50% { 
+    opacity: 80%;
+  }
+}
+
 .header {
   width: 100%;
   height: 30px;
@@ -14,6 +20,10 @@
   &__section {
     display: flex;
     gap: 10px;
+  }
+
+  &__title {
+    animation: blinker 1s linear infinite;
   }
 
   @media (max-width: 1079px) {
