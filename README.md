@@ -12,6 +12,10 @@ Here you can see detail requirements for this layout:
 
 https://drive.google.com/file/d/18F7iARMji8I2HITEILNf9M77X6NGY2Zy/view?usp=sharing
 
+## Technologies
+
+The layout was made using BEM methodology and SCSS(SASS) preprocessor. Switching between color themes implemented using JavaScript.
+
 ## Local deployment
 
 ### Dependencies
