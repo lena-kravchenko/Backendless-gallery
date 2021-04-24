@@ -1,10 +1,19 @@
 const selectElement = document.querySelector('.theme-toggler');
-const themeRadio = document.getElementsByName('theme');
+const themeOptions = document.getElementsByName('theme');
 
-for (let i = 0; i < themeRadio.length; i++) {
-  themeRadio[i].onclick = function setRadio() {
-    localStorage.setItem('radioPressed', this.value);
+for (let i = 0; i < themeOptions.length; i++) {
+  themeOptions[i].onclick = function setRadio() {
+    localStorage.setItem('selectedTheme', this.value);
   };
+}
+
+if (localStorage.getItem('selectedTheme')) {
+  const option = localStorage.getItem('selectedTheme');
+
+  document.querySelector('input[name="theme"][value="' + option + '"]').setAttribute('checked', 'checked');
+  document.querySelector('option[name="theme"][value="' + option + '"]').setAttribute('selected', 'selected');
+
+  setTheme();
 }
 
 function setTheme() {
@@ -21,13 +30,6 @@ function setTheme() {
   }
 }
 
-if (localStorage.getItem('radioPressed')) {
-  const radioPressed = localStorage.getItem('radioPressed');
-  document.querySelector('input[name="theme"][value="' + radioPressed + '"]').setAttribute('checked', 'checked');
-
-  setTheme();
-}
-
 function initialState(themeName) {
   localStorage.setItem('theme', themeName);
 
@@ -35,11 +37,15 @@ function initialState(themeName) {
 }
 
 selectElement.addEventListener('change', (event) => {
-  event.preventDefault();
-  initialState(event.target.value);
+  if (event.target.tagName === 'INPUT' || event.target.tagName === 'SELECT') {
+    event.preventDefault();
+    initialState(event.target.value);
+  }
 });
 
 selectElement.addEventListener('click', (event) => {
-  event.preventDefault();
-  initialState(event.target.value);
+  if (event.target.tagName === 'BUTTON') {
+    event.preventDefault();
+    initialState(event.target.value);
+  }
 });
