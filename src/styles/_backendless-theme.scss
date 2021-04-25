@@ -3,8 +3,9 @@
   --second-color: #525252;
   --third-color: #f7f9fc;
   --font-color: #fff;
+
+  .icon {
+    filter: invert(100%);
+  };
 }
 
-.icon {
-  filter: invert(100%)
-};
