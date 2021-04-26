@@ -1,7 +1,7 @@
 {
-  "name": "vanilla-template",
+  "name": "backendless-gallery",
   "version": "1.0.0",
-  "description": "Template for vanilla (no framework) frontend projects",
+  "description": "Backendless Gallery adaptive layout",
   "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
