@@ -26,4 +26,51 @@
     color: var(--font-color);
     animation: blinker 3s linear infinite;
   }
+
+  &__grid {
+    height: 200vh;
+    padding: 0 15px 45px;
+
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'item1 item1 item1 item2'
+      'item1 item1 item1 item3'
+      'item1 item1 item1 item4'
+      'item5 item6 item7 item8'
+      'item9 item10 item10 item10'
+      'item11 item10 item10 item10'
+      'item12 item10 item10 item10';
+
+    @media (max-width: 1080px) and (min-width: 641px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        'item1 item1 item2'
+        'item1 item1 item3'
+        'item4 item4 item5'
+        'item4 item4 item6'
+        'item7 item7 item8'
+        'item7 item7 item9'
+        'item10 item10 item11'
+        'item10 item10 item12';
+    }
+    
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        'item1 item1 item1'
+        'item1 item1 item1'
+        'item1 item1 item1'
+        'item2 item3 item4'
+        'item5 item5 item5'
+        'item5 item5 item5'
+        'item5 item5 item5'
+        'item6 item7 item8'
+        'item9 item9 item9'
+        'item9 item9 item9'
+        'item9 item9 item9'
+        'item10 item11 item12';
+    }
+  }
 }
